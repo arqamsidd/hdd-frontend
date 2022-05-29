@@ -1,0 +1,65 @@
+:host p,
+:host h2 {
+  margin: 0;
+}
+
+:host p {
+  line-height: 1.5em;
+}
+
+:host .ctn {
+  background-image: url("/assets/images/dealback.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin: 80px 0px;
+}
+
+:host .ctn-inside .deals-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+:host .ctn-inside .deals-section .deal-left-section,
+:host .ctn-inside .deals-section .deal-right-section {
+  width: 50%;
+  padding-left: 100px;
+}
+
+:host .ctn-inside .deals-section .deal-left-section h2 {
+  width: 60%;
+}
+
+:host .ctn-inside .deals-section .deal-right-section p {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  :host .ctn {
+    margin: 40px 0px;
+  }
+  :host .ctn-inside .deals-section {
+    flex-direction: column;
+  }
+  :host .ctn-inside .deals-section .deal-left-section,
+  :host .ctn-inside .deals-section .deal-right-section {
+    width: 100%;
+    padding-left: 0px;
+  }
+  :host .ctn-inside .deals-section .deal-left-section h2 {
+    width: 100%;
+  }
+  :host .ctn-inside .deals-section .deal-right-section p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,114 @@
+.product-finder-ctn {
+  background-image: url("/assets/images/productfinderbackground.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.product-finder-ctn .product-finder-ctn-inner h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-finder-ctn .product-finder-ctn-inner p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.product-finder-ctn .product-finder-ctn-inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.product-finder-ctn .product-finder-ctn-inner form select {
+  padding: 0.5rem;
+  border: none;
+  width: 20%;
+  color: black;
+  font-family: "Encode Sans", sans-serif;
+}
+
+.product-finder-ctn .product-finder-ctn-inner form button {
+  background: transparent -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#ffd987),
+      to(#f4ab0c)
+    ) 0% 0%;
+  background: transparent linear-gradient(180deg, #ffd987 0%, #f4ab0c 100%) 0%
+    0%;
+  font-family: "Encode Sans", sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+}
+
+.product-finder-ctn .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.product-finder-ctn .services .service-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.product-finder-ctn .services .service-box img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 15px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.product-finder-ctn .services .service-box h5 {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.product-finder-ctn .services .service-box p {
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .product-finder-ctn .product-finder-ctn-inner form {
+    flex-direction: column;
+  }
+  .product-finder-ctn .product-finder-ctn-inner form select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .product-finder-ctn .services {
+    flex-wrap: wrap;
+  }
+  .product-finder-ctn .services .service-box {
+    justify-content: start;
+  }
+  .product-finder-ctn .services > * {
+    flex: 0 0 100%;
+  }
+}

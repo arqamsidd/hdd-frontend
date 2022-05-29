@@ -1,0 +1,68 @@
+.account-ctn {
+  background-image: url("/assets/images/accbackg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.account-ctn .account-ctn-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.account-ctn .account-ctn-inner .account-left h2 {
+  color: white;
+  width: 60%;
+}
+
+.account-ctn .account-ctn-inner .account-left ul {
+  list-style: none;
+  padding: 0px;
+  color: white;
+}
+
+.account-ctn .account-ctn-inner .account-left ul li {
+  margin-top: 0.5rem;
+}
+
+.account-ctn .account-ctn-inner .account-left ul li::before {
+  content: ">";
+  margin-right: 5px;
+}
+
+.account-ctn .account-ctn-inner .account-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 80px;
+}
+
+@media (max-width: 480px) {
+  .account-ctn .account-ctn-inner {
+    flex-direction: column;
+  }
+  .account-ctn .account-ctn-inner .account-left h2 {
+    width: 100%;
+  }
+
+  .account-ctn .account-ctn-inner .account-right {
+    align-items: start;
+    margin-top: 30px;
+  }
+}

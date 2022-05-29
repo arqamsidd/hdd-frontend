@@ -1,0 +1,14 @@
+.features-brand-ctn {
+  margin: 50px 0px;
+}
+
+.features-brand-ctn
+  .features-brand-slider
+  swiper
+  .swiper-wrapper
+  .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

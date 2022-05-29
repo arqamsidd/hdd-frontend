@@ -1,0 +1,56 @@
+:host .industries {
+  background-image: url("/assets/images/industiresBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+:host .industries-ctn h2 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+:host .industries-ctn .industries-ctn-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+:host .industries-ctn .industries-ctn-inside a {
+  text-decoration: none;
+  color: black;
+}
+
+:host .industries-ctn .industries-ctn-inside .indusbox img {
+  width: 54px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 500px;
+}
+
+:host .industries-ctn .industries-ctn-inside .indusbox:hover img {
+  box-shadow: 13px 13px 12px #efefef;
+}
+
+:host .industries-ctn .industries-ctn-inside .indusbox p {
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  :host .industries-ctn .industries-ctn-inside {
+    flex-wrap: wrap;
+  }
+
+  :host .industries-ctn .industries-ctn-inside > * {
+    flex: 0 0 50%;
+    margin-bottom: 20px;
+  }
+}

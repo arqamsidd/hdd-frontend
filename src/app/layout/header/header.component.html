@@ -1,0 +1,156 @@
+<header class="header">
+  <div class="logo-row home-container">
+    <div class="logo">
+      <img src="/assets/images/logo.jpg" alt="" />
+    </div>
+    <div class="search">
+      <form action="#" id="search-form">
+        <select name="category" id="s-category">
+          <option value="volvo">All</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input
+          type="text"
+          name="searchtext"
+          id="s-text"
+          placeholder="Search for product..."
+        />
+      </form>
+    </div>
+    <div class="cart-icons">
+      <div class="contact">
+        <img src="/assets/images/contact.webp" />
+        <p>Contact Us</p>
+      </div>
+      <div class="cart">
+        <img src="https://static.thenounproject.com/png/101791-200.png" />
+        <p>Cart</p>
+      </div>
+      <div class="login">
+        <img src="https://static.thenounproject.com/png/101791-200.png" />
+        <p>Login</p>
+      </div>
+    </div>
+  </div>
+  <div class="top-menu home-container">
+    <div class="menu-item-big"><a>Industries</a></div>
+    <div class="menu-item-big"><a>Services</a></div>
+    <div class="menu-item-big"><a>Resources</a></div>
+    <div class="menu-item-big"><a>Account benefits</a></div>
+    <div class="menu-item-big"><a>Hot Deals</a></div>
+  </div>
+  <div class="bottom-menu home-container">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid p-0">
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-controls="navbarContent"
+          [attr.aria-expanded]="!collapsed"
+          aria-label="Toggle navigation"
+          (click)="collapsed = !collapsed"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse"
+          [class.collapse]="collapsed"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav">
+
+            <li class="nav-item" ngbDropdown>
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown1"
+                role="button"
+              >
+                Memory
+              </a>
+              <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu" >
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item" ngbDropdown>
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown1"
+                role="button"
+              >
+                Processor
+              </a>
+              <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu" >
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item" ngbDropdown>
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown1"
+                role="button"
+              >
+                Hard Drive / SSD
+              </a>
+              <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu" >
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item" ngbDropdown>
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown1"
+                role="button"
+              >
+                Motherboard
+              </a>
+              <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu" >
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item" ngbDropdown>
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown1"
+                role="button"
+              >
+                Networking
+              </a>
+              <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu" >
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+                <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

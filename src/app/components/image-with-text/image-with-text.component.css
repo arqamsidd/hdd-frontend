@@ -1,0 +1,55 @@
+
+
+.who-we-are-ctn .who-we-are-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.who-we-are-ctn .who-we-are-inner .who-we-are-left-section {
+  width: 50%;
+  background-image: url("/assets/images/wwa.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.who-we-are-ctn .who-we-are-inner .who-we-are-right-section {
+  width: 50%;
+  padding: 5rem;
+}
+
+.who-we-are-ctn .who-we-are-inner .who-we-are-right-section h2 {
+  margin-bottom: 20px;
+}
+
+.who-we-are-ctn .who-we-are-inner .who-we-are-right-section p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px){
+  .who-we-are-ctn .who-we-are-inner {
+    flex-direction: column;
+  }
+  .who-we-are-ctn .who-we-are-inner .who-we-are-left-section {
+    width: 100%;
+  }
+  .who-we-are-ctn .who-we-are-inner .who-we-are-right-section {
+    width: 100%;
+    padding: 0;
+  }
+  .who-we-are-ctn .who-we-are-inner .who-we-are-right-section h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}

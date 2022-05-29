@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  --primary: #06436c;
+  --white: #ffffff;
+  --btnColor: #fff;
+  --black: #000;
+  --link-color: #45a6e6;
+  zoom: 90%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 16px;
+}
+:focus{
+  border-radius:0 !important;
+}
+
+.home-container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+h2 {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.cta-btn {
+  background-color: var(--primary);
+  color: var(--btnColor);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  border: none;
+  padding: 10px 30px 12px 30px;
+  transition: all 0.3s ease-in-out;
+  line-height: 1em;
+  display: inline-block;
+}
+.cta-btn:hover {
+  background-color: var(--black);
+  color: var(--btnColor);
+}
+.cta-btn.white {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.cta-btn.white:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  
+}
+
+/* Small Desktop Screens */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .home-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .home-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .home-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+/* Swiper button change */
+.swiper{
+  padding: 0px 30px !important  ;
+}
+
+.swiper-button-prev {
+  background-image: url("/assets/images/left.svg") !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0px !important;
+}
+
+.swiper-button-next {
+  background-image: url("/assets/images/arrow-right.svg") !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px !important;
+}
+
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
+}
