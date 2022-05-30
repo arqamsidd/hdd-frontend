@@ -88,10 +88,9 @@
   display: none;
 }
 
-
-@media (max-width: 480px) {
-  .header{
-    margin-bottom: -20px;
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: -65px;
   }
   .header .top-menu {
     display: none;
@@ -119,9 +118,232 @@
     display: block;
   }
 
-
   .header .logo-row .search {
     flex-basis: 100%;
     order: 3;
+  }
+}
+
+/* Mega menu */
+
+:host ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+:host {
+  overflow-x: hidden;
+}
+
+.bottom-menu {
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.custom-nav {
+  width: 100%;
+  float: left;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-nav > li {
+  display: inline-block;
+  float: left;
+}
+
+.custom-nav > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+li.drop-down,
+.flyout-right,
+.flyout-left {
+  position: relative;
+}
+
+li.drop-down > ul {
+  left: 0px;
+  min-width: 200px;
+}
+
+.drop-down-ul {
+  display: none;
+}
+
+.flyout-right > .flyout-inner,
+.flyout-left > .flyout-inner {
+  top: 0;
+  min-width: 450px;
+  display: none;
+}
+
+li.drop-down > ul > li > a,
+.flyout-right ul > li > a,
+.flyout-left ul > li > a {
+  color: var(--secondary);
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  transition: color 0.2s linear, background 0.2s linear;
+}
+
+.flyout-right ul > li > a,
+.flyout-left ul > li > a {
+  color: black;
+}
+
+.flyout-right ul > li > a,
+.flyout-left ul > li > a {
+  background-color: #fff;
+  padding: 2px 0px;
+  color: var(--link-color);
+}
+
+.flyout-inner {
+  background-color: white;
+  padding: 15px;
+}
+
+.flyout-inner .inner-categs,
+.flyout-inner .featured-p {
+  flex-basis: 50%;
+}
+.flyout-inner .inner-categs p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.flyout-inner .featured-p p {
+  font-weight: bold;
+}
+
+.flyout-inner .featured-p {
+  background-color: #f9f9f9;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.flyout-inner .featured-p .p-img {
+  width: 80%;
+}
+.flyout-inner .featured-p .p-title {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/*hover*/
+.drop-down-ul:hover,
+li.drop-down > a:hover + .drop-down-ul {
+  display: block;
+}
+
+li.flyout-right > .flyout-inner:hover,
+li.flyout-right a:hover + .flyout-inner,
+li.flyout-left > .flyout-inner:hover,
+li.flyout-left a:hover + .flyout-inner {
+  display: flex;
+  gap: 1rem;
+}
+.drop-down-ul > li > a {
+  padding: 15px 10px;
+}
+
+@media (min-width: 767px) {
+  .custom-nav > li > a {
+    display: block;
+  }
+
+  .flyout-right > .flyout-inner,
+  .flyout-left > .flyout-inner,
+  li.drop-down > ul {
+    position: absolute;
+  }
+  .flyout-right > .flyout-inner {
+    left: 100%;
+  }
+  .flyout-left > .flyout-inner {
+    right: 100%;
+  }
+  .flyout-left > a > i.fa-angle-right{
+    display: none;
+  }
+}
+
+/* @media (min-width: 481px) and (max-width: 767px) { */
+@media (max-width: 767px) {
+  .custom-nav {
+    min-height: 58px;
+    width: 100%;
+    display: none;
+  }
+
+  .custom-nav {
+    flex-direction: column;
+  }
+
+  .flyout-right{
+
+  }
+
+  .custom-nav > li > a {
+    padding: 10px 0px;
+  }
+
+  .drop-down-ul > li > a {
+    padding: 5px 0px;
+  }
+  .flyout-right{
+    margin-top: 15px;
+  }
+  .flyout-inner {
+    flex-direction: column;
+    padding: 0;
+    min-width: 200px !important;
+  }
+  .flyout-inner .inner-categs,
+  .flyout-inner .featured-p {
+    flex-basis: 100%;
+  }
+  .flyout-inner .featured-p {
+    padding: 0;
+    background-color: white;
+  }
+
+  .flyout-inner .featured-p .p-img {
+    width: 50%;
+  }
+  .flyout-inner .featured-p .p-title {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: normal;
+    width: 60%;
+  }
+
+  .custom-nav > li > a {
+    width: 100%;
+    display: none;
+  }
+  .custom-nav > li {
+    width: 100%;
+  }
+  .display.custom-nav{
+    display: flex;
+  }
+  .display.custom-nav > li > a {
+    display: block;
+  }
+
+  .flyout-right > .flyout-inner,
+  .flyout-left > .flyout-inner,
+  li.drop-down > ul {
+    position: relative;
+  }
+
+  .flyout-left > a > i.fa-angle-left{
+    display: none;
   }
 }
