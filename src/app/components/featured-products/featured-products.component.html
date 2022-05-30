@@ -1,1 +1,24 @@
-<p>featured-products works!</p>
+<div class="featured-products home-container">
+  <h2>Featured Products</h2>
+
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>Hard Disk</a>
+      <ng-template ngbNavContent>First content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Memory</a>
+      <ng-template ngbNavContent>Second content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Processor</a>
+      <ng-template ngbNavContent>Third content</ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+
+  <div class="slider slider1">
+    <div class="first-prod">123</div>
+    <div class="all-prod">456</div>
+  </div>
+</div>
