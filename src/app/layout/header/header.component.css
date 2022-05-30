@@ -37,6 +37,7 @@
     no-repeat 98% 50%;
   background-size: 20px;
   width: 100%;
+  background-color: white;
 }
 
 .header .logo-row .cart-icons {
@@ -83,9 +84,44 @@
   text-decoration: none;
 }
 
+.header .logo-row .cart-icons .menu {
+  display: none;
+}
+
 
 @media (max-width: 480px) {
-  .header {
+  .header{
+    margin-bottom: -20px;
+  }
+  .header .top-menu {
     display: none;
+  }
+
+  .header .logo-row .cart-icons p {
+    display: none;
+  }
+
+  .header .logo-row {
+    flex-wrap: wrap;
+  }
+
+  .header .logo-row .logo {
+    flex-basis: 50%;
+    order: 1;
+  }
+
+  .header .logo-row .cart-icons {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .header .logo-row .cart-icons .menu {
+    display: block;
+  }
+
+
+  .header .logo-row .search {
+    flex-basis: 100%;
+    order: 3;
   }
 }

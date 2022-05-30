@@ -15,3 +15,10 @@
 .bottom-menu .navbar{
   padding: 0;
 }
+
+
+@media (max-width: 480px) {
+  .bottom-menu {
+    display: none;
+  }
+}
