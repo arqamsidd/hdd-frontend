@@ -20,6 +20,7 @@ import { FullImageCtaComponent } from './components/full-image-cta/full-image-ct
 
 import { SwiperModule } from 'swiper/angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderBottomComponent } from './layout/header-bottom/header-bottom.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ImageWithTextComponent,
     CaseStudiesComponent,
     BrandsSliderComponent,
-    FullImageCtaComponent
+    FullImageCtaComponent,
+    HeaderBottomComponent
   ],
   imports: [
     BrowserModule,

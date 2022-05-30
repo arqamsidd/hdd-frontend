@@ -83,18 +83,6 @@
   text-decoration: none;
 }
 
-.header .bottom-menu .navbar-nav {
-  width: 100% !important;
-  justify-content: space-between;
-}
-
-.header .bottom-menu .nav-link {
-  padding-left: 0;
-}
-
-.header .bottom-menu .nav-link {
-  color: black;
-}
 
 @media (max-width: 480px) {
   .header {

@@ -130,4 +130,47 @@
   .featured-products {
     margin: 30px 0px;
   }
+
+  .featured-products .slide1 {
+    flex-wrap: wrap;
+  }
+  .featured-products .slide1 .first-prod {
+    flex-basis: 100%;
+  }
+  .featured-products .slide1 .all-prod {
+    flex-basis: 100%;
+  }
+
+  .featured-products .slide1 .all-prod > * {
+    flex: 1;
+  }
+  .featured-products .slider .all-prod > * {
+    flex: 1;
+  }
+
+  .p-card-first .p-img {
+    text-align: left;
+  }
+  .p-card .p-img img {
+    width: 50%;
+  }
+
+  .featured-products .slider .all-prod .p-card .p-img img {
+    width: 100%;
+  }
+
+  .p-card .p-title {
+    font-size: 16px;
+  }
+
+  .p-card .p-price {
+    font-size: 16px;
+  }
+
+  .p-card .disc-price {
+    font-size: 12px;
+  }
+  .p-card .p-label {
+    font-size: 14px;
+  }
 }
