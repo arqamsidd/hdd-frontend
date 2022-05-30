@@ -3,6 +3,7 @@
 
 :root {
   --primary: #06436c;
+  --secondary: #45a6e6;
   --white: #ffffff;
   --btnColor: #fff;
   --black: #000;
@@ -17,8 +18,8 @@
   font-family: "Encode Sans", sans-serif;
   font-size: 16px;
 }
-:focus{
-  border-radius:0 !important;
+:focus {
+  border-radius: 0 !important;
 }
 
 .home-container {
@@ -56,7 +57,6 @@ h2 {
 .cta-btn.white:hover {
   background-color: var(--primary);
   color: var(--white);
-  
 }
 
 /* Small Desktop Screens */
@@ -83,11 +83,12 @@ h2 {
   }
 }
 
-
-
 /* Swiper button change */
-.swiper{
+.swiper {
   padding: 0px 30px !important  ;
+}
+.swiper.featured-swiper {
+  padding: 0 !important;
 }
 
 .swiper-button-prev {
@@ -104,6 +105,16 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   right: 0px !important;
+}
+
+.featured-swiper .swiper-button-prev {
+  left: 0px !important;
+}
+.featured-swiper .swiper-button-next {
+  right: 0px !important;
+}
+.featured-swiper .swiper-pagination{
+  bottom: -4px !important;
 }
 
 .swiper-button-next::after {
