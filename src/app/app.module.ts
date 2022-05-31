@@ -22,6 +22,8 @@ import { FullImageCtaComponent } from './components/full-image-cta/full-image-ct
 import { SwiperModule } from 'swiper/angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopCartComponent } from './layout/top-cart/top-cart.component';
+import { TopSmartSearchComponent } from './layout/top-smart-search/top-smart-search.component';
+import { TopMainMenuComponent } from './layout/top-main-menu/top-main-menu.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { TopCartComponent } from './layout/top-cart/top-cart.component';
     CaseStudiesComponent,
     BrandsSliderComponent,
     FullImageCtaComponent,
-    TopCartComponent
+    TopCartComponent,
+    TopSmartSearchComponent,
+    TopMainMenuComponent
   ],
   imports: [
     BrowserModule,

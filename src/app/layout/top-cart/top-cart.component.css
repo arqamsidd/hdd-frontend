@@ -1,4 +1,32 @@
+:host, .cart-icons{
+  display: flex;
+  gap: 1.5rem;
+}
+.cart-icons > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-icons >div >a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.cart-icons  > div > img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.cart-icons p {
+  margin: 0;
+  font-size: 14px;
+}
 
 :host > a {
   text-decoration: none;
@@ -9,18 +37,23 @@
   align-items: center;
 }
 
-:host > a >  img {
+:host > a > img {
   width: 25px;
   height: 25px;
   object-fit: contain;
 }
 
-:host > a >  p {
+:host > a > p {
   margin: 0;
   font-size: 14px;
 }
 
-.cm-item{
+
+ .cart-icons .menu {
+  display: none;
+}
+
+.cm-item {
   display: flex;
   flex-direction: row;
   color: black;
@@ -29,37 +62,34 @@
   margin-bottom: 15px;
 }
 
-
-.cm-item p{
+.cm-item p {
   margin: 0%;
 }
 
-.cm-pimg{
+.cm-pimg {
   flex-basis: 30%;
 }
-.cm-pimg img{
+.cm-pimg img {
   height: 70px;
   object-fit: contain;
 }
 
-.cm-pinfo{
+.cm-pinfo {
   flex-basis: 70%;
 }
-.cm-ptitle{
+.cm-ptitle {
   font-weight: bold;
 }
-.cm-price{
+.cm-price {
   font-size: 12px;
 }
-.cm-psubtotal{
+.cm-psubtotal {
   margin-top: 10px !important;
   font-weight: bold;
   color: var(--secondary);
 }
 
-
-
-.minicart-checkout{
+.minicart-checkout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,35 +97,45 @@
   margin-top: 10px;
 }
 
-
-.minicart-checkout a.cta-btn{
+.minicart-checkout a.cta-btn {
   border: 1px solid var(--primary);
 }
-.minicart-checkout a.cta-btn.white{
+.minicart-checkout a.cta-btn.white {
   margin-left: 20px;
 }
 
-.minicart-checkout .minicart-subtotal{
+.minicart-checkout .minicart-subtotal {
   margin-top: auto;
   margin-bottom: auto;
   font-weight: bold;
   color: var(--secondary);
   font-size: 20px;
-
 }
 
-.minicart-checkout .minicart-subtotal #totalLabel{
+.minicart-checkout .minicart-subtotal #totalLabel {
   color: black;
   font-size: 16px;
 }
 
 @media (max-width: 767px) {
-  :host > a >  p {
+  :host > .cart-icons >div > a > p {
     display: none;
   }
 
-  .minicart-checkout a.cta-btn.white{
+  .minicart-checkout a.cta-btn.white {
     margin-top: 20px;
     margin-left: 0;
   }
+
+  :host {
+    flex-basis: 50%;
+    order: 2;
+    width: 50%;
+  }
+
+  .cart-icons .menu {
+    display: flex;
+  }
+
+  
 }

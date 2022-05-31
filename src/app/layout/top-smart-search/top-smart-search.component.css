@@ -1,0 +1,35 @@
+:host {
+  flex-basis: 50%;
+}
+
+ #search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: start;
+}
+ #search-form select,
+#search-form input {
+  padding: 0.5rem;
+  color: black;
+  font-family: "Encode Sans", sans-serif;
+  border: 0.5px solid black;
+}
+ #search-form input {
+  padding-right: 25px;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat 98% 50%;
+  background-size: 20px;
+  width: 100%;
+  background-color: white;
+}
+
+
+@media (max-width: 767px) {
+  :host {
+    flex-basis: 100%;
+    order: 3;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="search">
+  <form action="#" id="search-form">
+    <select name="category" id="s-category">
+      <option value="volvo">All</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+    <input
+      type="text"
+      name="searchtext"
+      id="s-text"
+      placeholder="Search for product..."
+      [(ngModel)]="model" [ngbTypeahead]="search"
+    />
+  </form>
+  
+</div>
