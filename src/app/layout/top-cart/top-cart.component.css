@@ -1,0 +1,101 @@
+
+
+:host > a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:host > a >  img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+:host > a >  p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cm-item{
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+  gap: 1rem;
+  margin-bottom: 15px;
+}
+
+
+.cm-item p{
+  margin: 0%;
+}
+
+.cm-pimg{
+  flex-basis: 30%;
+}
+.cm-pimg img{
+  height: 70px;
+  object-fit: contain;
+}
+
+.cm-pinfo{
+  flex-basis: 70%;
+}
+.cm-ptitle{
+  font-weight: bold;
+}
+.cm-price{
+  font-size: 12px;
+}
+.cm-psubtotal{
+  margin-top: 10px !important;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+
+
+.minicart-checkout{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.minicart-checkout a.cta-btn{
+  border: 1px solid var(--primary);
+}
+.minicart-checkout a.cta-btn.white{
+  margin-left: 20px;
+}
+
+.minicart-checkout .minicart-subtotal{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: 20px;
+
+}
+
+.minicart-checkout .minicart-subtotal #totalLabel{
+  color: black;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  :host > a >  p {
+    display: none;
+  }
+
+  .minicart-checkout a.cta-btn.white{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

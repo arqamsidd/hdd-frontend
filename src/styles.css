@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
 
+
+/* mini cart popover */
+.popover{
+  max-width: 100% !important;
+  top: 0px !important;
+  left: -150px !important;
+}
 :root {
   --primary: #06436c;
   --secondary: #45a6e6;
@@ -73,6 +80,10 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .popover{
+    left: -167px !important;
+  }
 }
 
 /* Mobile */
@@ -80,6 +91,9 @@ h2 {
   .home-container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .popover{
+    left: -61px !important;
   }
 }
 

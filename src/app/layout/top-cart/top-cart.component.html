@@ -1,0 +1,54 @@
+<ng-template #popContent>
+  <!--cart box start-->
+  <div class="cart-box-wrapper">
+    <div class="cart-box">
+      <div [hidden]="!cloading" class="cart-list"></div>
+
+      <div [hidden]="cloading">
+        <a href="#" class="cm-item">
+          <div class="cm-pimg">
+            <img src="/assets/images/memory.png" alt="" />
+          </div>
+          <div class="cm-pinfo">
+            <p class="cm-ptitle">D9143-69048 - HP LT6000R U3 System Board</p>
+            <p class="cm-price">$5,125 x 5</p>
+            <p class="cm-psubtotal">$25,625</p>
+          </div>
+        </a>
+        <a href="#" class="cm-item">
+          <div class="cm-pimg">
+            <img src="/assets/images/memory.png" alt="" />
+          </div>
+          <div class="cm-pinfo">
+            <p class="cm-ptitle">D9143-69048 - HP LT6000R U3 System Board</p>
+            <p class="cm-price">$5,125 x 5</p>
+            <p class="cm-psubtotal">$25,625</p>
+          </div>
+        </a>
+      </div>
+      <div class="minicart-checkout">
+        <div>
+          <a href="#" class="cta-btn">Checkout</a>
+          <a href="#" class="cta-btn white">View Full Cart</a>
+        </div>
+        <div class="subtotal-div">
+          <p class="minicart-subtotal">
+            <span id="totalLabel">Total: </span>
+            $25,625
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cart box end-->
+</ng-template>
+<ng-template #popTitle><b>Cart</b></ng-template>
+<a
+  href="#"
+  [ngbPopover]="popContent"
+  [popoverTitle]="popTitle"
+  placement="bottom"
+>
+  <img src="/assets/images/cart.svg" />
+  <p>Cart</p>
+</a>

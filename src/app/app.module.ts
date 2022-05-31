@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -20,6 +21,7 @@ import { FullImageCtaComponent } from './components/full-image-cta/full-image-ct
 
 import { SwiperModule } from 'swiper/angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TopCartComponent } from './layout/top-cart/top-cart.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +40,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ImageWithTextComponent,
     CaseStudiesComponent,
     BrandsSliderComponent,
-    FullImageCtaComponent
+    FullImageCtaComponent,
+    TopCartComponent
   ],
   imports: [
     BrowserModule,
     SwiperModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
