@@ -1,143 +1,39 @@
 <div class="featured-products home-container">
   <h2>Featured Products</h2>
 
+  <!-- Angular Bootstrap Tabs for categories -->
   <ul ngbNav #nav="ngbNav" class="nav-tabs">
     <li ngbNavItem>
       <a ngbNavLink>Hard Disk</a>
       <ng-template ngbNavContent>
+        <!-- Swiper slider starts here -->
         <swiper [config]="config" class="featured-swiper">
           <ng-template swiperSlide>
             <!-- This is the first slide with 1 big product card, 6 small product cards -->
             <div class="slider slide1">
               <div class="first-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card p-card-first">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <p class="p-price">$229.99</p>
-                    <p class="disc-price">$309.99</p>
-                    <p class="p-label">Free Shipping</p>
-                    <div class="p-img">
-                      <img src="/assets/images/harddisk.png" alt="" />
-                    </div>
-                  </div>
+                  <app-first-product-card-slider></app-first-product-card-slider> 
                 </a>
               </div>
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
               </div>
             </div>
@@ -148,160 +44,35 @@
             <div class="slider slide">
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/harddisk.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                  <app-product-card-slider></app-product-card-slider>
+                </a>  
+                
               </div>
             </div>
           </ng-template>
         </swiper>
+        <!-- Swiper Slider ends here -->
       </ng-template>
     </li>
     <li ngbNavItem>
@@ -313,133 +84,27 @@
             <div class="slider slide1">
               <div class="first-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card p-card-first">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <p class="p-price">$229.99</p>
-                    <p class="disc-price">$309.99</p>
-                    <p class="p-label">Free Shipping</p>
-                    <div class="p-img">
-                      <img src="/assets/images/memory.png" alt="" />
-                    </div>
-                  </div>
+                  <app-first-product-card-slider></app-first-product-card-slider> 
                 </a>
               </div>
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
               </div>
             </div>
@@ -450,156 +115,30 @@
             <div class="slider slide">
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/memory.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                  <app-product-card-slider></app-product-card-slider>
+                </a>  
+                
               </div>
             </div>
           </ng-template>
@@ -615,133 +154,27 @@
             <div class="slider slide1">
               <div class="first-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card p-card-first">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <p class="p-price">$229.99</p>
-                    <p class="disc-price">$309.99</p>
-                    <p class="p-label">Free Shipping</p>
-                    <div class="p-img">
-                      <img src="/assets/images/proc.png" alt="" />
-                    </div>
-                  </div>
+                  <app-first-product-card-slider></app-first-product-card-slider> 
                 </a>
               </div>
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
               </div>
             </div>
@@ -752,156 +185,30 @@
             <div class="slider slide">
               <div class="all-prod">
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <app-product-card-slider></app-product-card-slider>
                 </a>
-
                 <a href="#" class="p-card-parent">
-                  <div class="p-card">
-                    <h3 class="p-title">
-                      WD8000A4NC - Western Digital Sharespace 8TB External
-                      Network Drive (Refurbished)
-                    </h3>
-                    <div class="p-details">
-                      <div class="p-pricing">
-                        <p class="p-price">$229.99</p>
-                        <p class="disc-price">$309.99</p>
-                        <p class="p-label">Free Shipping</p>
-                      </div>
-                      <div class="p-img">
-                        <img src="/assets/images/proc.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                  <app-product-card-slider></app-product-card-slider>
+                </a>  
+                
               </div>
             </div>
           </ng-template>

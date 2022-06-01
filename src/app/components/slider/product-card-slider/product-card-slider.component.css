@@ -1,0 +1,77 @@
+
+.p-card {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.p-card .p-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.p-card .p-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.p-card .disc-price {
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin: 0rem;
+}
+.p-card .p-label {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.p-card .p-img {
+  text-align: center;
+}
+
+.p-card .p-img img {
+  width: 60%;
+}
+
+
+.p-card-first {
+  height: 100%;
+}
+
+ .p-card .p-details {
+  display: flex;
+}
+
+ .p-card .p-details .p-pricing {
+  flex: 0 0 50%;
+}
+
+
+@media (max-width: 480px) {
+
+  .p-card-first .p-img {
+    text-align: left;
+  }
+  .p-card-first .p-img img {
+    width: 50%;
+  }
+
+  .p-card .p-title {
+    font-size: 16px;
+  }
+
+  .p-card .p-price {
+    font-size: 16px;
+  }
+
+  .p-card .disc-price {
+    font-size: 12px;
+  }
+  .p-card .p-label {
+    font-size: 14px;  
+  }
+}

@@ -24,6 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopCartComponent } from './layout/top-cart/top-cart.component';
 import { TopSmartSearchComponent } from './layout/top-smart-search/top-smart-search.component';
 import { TopMainMenuComponent } from './layout/top-main-menu/top-main-menu.component';
+import { ProductCardSliderComponent } from './components/slider/product-card-slider/product-card-slider.component';
+import { FirstProductCardSliderComponent } from './components/slider/first-product-card-slider/first-product-card-slider.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { TopMainMenuComponent } from './layout/top-main-menu/top-main-menu.compo
     FullImageCtaComponent,
     TopCartComponent,
     TopSmartSearchComponent,
-    TopMainMenuComponent
+    TopMainMenuComponent,
+    ProductCardSliderComponent,
+    FirstProductCardSliderComponent
   ],
   imports: [
     BrowserModule,
