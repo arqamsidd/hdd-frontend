@@ -1,4 +1,5 @@
-:host, .cart-icons{
+:host,
+.cart-icons {
   display: flex;
   gap: 1.5rem;
 }
@@ -8,7 +9,7 @@
   justify-content: center;
   align-items: center;
 }
-.cart-icons >div >a {
+.cart-icons > div > a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -17,7 +18,7 @@
   align-items: center;
 }
 
-.cart-icons  > div > img {
+.cart-icons > div > img {
   width: 25px;
   height: 25px;
   object-fit: contain;
@@ -26,6 +27,22 @@
 .cart-icons p {
   margin: 0;
   font-size: 14px;
+}
+
+.cart-icons .cart .icon-counter {
+  position: absolute;
+  font-size: 10px;
+  top: 4px;
+  background: black;
+  color: white;
+  margin: 0;
+  line-height: 1em;
+  height: 14px;
+  width: 14px;
+  padding-left: 4.5px;
+  padding-top: 1.5px;
+  border-radius: 50px;
+  margin-left: 15px;
 }
 
 :host > a {
@@ -48,8 +65,7 @@
   font-size: 14px;
 }
 
-
- .cart-icons .menu {
+.cart-icons .menu {
   display: none;
 }
 
@@ -118,8 +134,13 @@
 }
 
 @media (max-width: 767px) {
-  :host > .cart-icons >div > a > p {
+  :host > .cart-icons > div > a > p {
     display: none;
+  }
+
+  .cart-icons .cart .icon-counter {
+    display: block !important;
+    top: 15px;
   }
 
   .minicart-checkout a.cta-btn.white {
@@ -136,6 +157,4 @@
   .cart-icons .menu {
     display: flex;
   }
-
-  
 }
