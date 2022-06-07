@@ -1,0 +1,73 @@
+<div class="product-single-card">
+  <div class="p-img">
+    <img src="/assets/images/harddisk.png" alt="" />
+  </div>
+  <h2 class="p-title">
+    WD8000A4NC - Western Digital Sharespace 8TB External Network Drive
+    (Refurbished)
+  </h2>
+  <div class="p-details">
+    <div class="p-pricing">
+      <p class="p-price">$229.99</p>
+      <p class="disc-price">$309.99</p>
+    </div>
+    <div class="p-qv">
+      <button (click)="quickView(prodContent)">Quick View</button>
+    </div>
+  </div>
+  <div class="p-labels">
+    <p class="p-label">Free Shipping</p>
+    <p class="p-label">+ Add to Quicklist</p>
+  </div>
+
+  <div class="p-qty">
+    <label for="p-qty">Qty: </label>
+    <button class="decrement" (click)="decrementCart()">-</button>
+    <input type="number" value="{{ cartQty }}" min="1" />
+    <button class="increment" (click)="incrementCart()">+</button>
+  </div>
+  <div class="p-atc">
+    <button >Add to Cart</button>
+  </div>
+</div>
+
+<ng-template #prodContent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title " id="product-title" style="margin-right: 20px;">WD8000A4NC - Western Digital Sharespace 8TB External Network Drive (Refurbished)</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body p-modal">
+    <div class="p-area">
+      <div class="p-img">
+        <img src="/assets/images/harddisk.png" alt="" />
+      </div>
+      <div class="p-details">
+        <div class="p-pricing">
+          <p class="p-price">$229.99</p>
+          <p class="disc-price">$309.99</p>
+        </div>
+        <div class="p-qv">
+          <a class="cta-btn">Details</a>
+        </div>
+      </div>
+      
+    </div>
+    <p class="p-desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos
+      tenetur optio, ipsa ducimus recusandae. Adipisci magni a ullam molestias
+      nihil magnam. Excepturi, magnam maiores ducimus sapiente cupiditate velit
+      et? Magni eum optio placeat delectus maiores accusantium ad quibusdam quam
+      omnis, hic voluptatum pariatur atque assumenda eius enim? Doloremque
+      aperiam corrupti sapiente ab quaerat porro nemo ducimus velit facere
+      quidem.
+    </p>
+  </div>
+  <div class="modal-footer">
+   
+  </div>
+</ng-template>

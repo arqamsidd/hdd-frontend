@@ -138,3 +138,30 @@ h2 {
 .swiper-button-prev::after {
   content: "" !important;
 }
+
+
+
+
+/* Category page accordions */
+
+.filter-accordion .accordion-item{
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.filter-accordion .accordion-button{
+  font-size: 14px ;
+  font-weight: bold ;
+  color: var(--secondary) ;
+  box-shadow: none;
+}
+
+.filter-accordion .accordion-button.collapsed{
+  color: var(--black) ;
+}
+
+/* modal */
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+}

@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SwiperModule } from 'swiper/angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
 
 
 
@@ -14,12 +16,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     FormsModule,
     SwiperModule,
-    NgbModule
+    NgbModule,
+    NgxSliderModule
   ],
   exports: [
     FormsModule,
     SwiperModule,
-    NgbModule
+    NgbModule,
+    NgxSliderModule
   ],
   providers: []
 })

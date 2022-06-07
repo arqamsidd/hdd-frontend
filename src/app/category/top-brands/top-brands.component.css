@@ -1,0 +1,22 @@
+.top-brands .entry-text {
+  margin: 20px 0px;
+}
+
+.top-brands .brands-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-brands .brands-box .single-brand {
+  flex-basis: 19%;
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.top-brands .brands-box .single-brand  img {
+  width: 80%;
+}

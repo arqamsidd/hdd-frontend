@@ -1,0 +1,27 @@
+.top-categories .entry-text{
+  margin: 20px 0px;
+}
+
+.top-categories .category-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-categories .category-box .single-category{
+  flex-basis: 24%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-categories .category-box .single-category .image-box{
+  text-align: center;
+  border: 1px solid gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.top-categories .category-box .single-category .image-box img{
+  width: 120px;
+}
