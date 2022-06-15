@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
 
-
 /* mini cart popover */
-.popover{
+.popover {
   max-width: 100% !important;
   top: 0px !important;
   left: -150px !important;
@@ -15,6 +14,7 @@
   --btnColor: #fff;
   --black: #000;
   --link-color: #45a6e6;
+  --light-blue: #45a6e6;
   zoom: 90%;
 }
 * {
@@ -27,6 +27,10 @@
 }
 :focus {
   border-radius: 0 !important;
+}
+
+.box-shadowed {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .home-container {
@@ -81,7 +85,7 @@ h2 {
     padding-right: 50px;
   }
 
-  .popover{
+  .popover {
     left: -167px !important;
   }
 }
@@ -92,7 +96,7 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .popover{
+  .popover {
     left: -61px !important;
   }
 }
@@ -127,7 +131,7 @@ h2 {
 .featured-swiper .swiper-button-next {
   right: 0px !important;
 }
-.featured-swiper .swiper-pagination{
+.featured-swiper .swiper-pagination {
   bottom: -4px !important;
 }
 
@@ -139,29 +143,31 @@ h2 {
   content: "" !important;
 }
 
-
-
-
 /* Category page accordions */
 
-.filter-accordion .accordion-item{
+.filter-accordion .accordion-item {
   border-radius: 0;
   margin-bottom: 10px;
 }
 
-.filter-accordion .accordion-button{
-  font-size: 14px ;
-  font-weight: bold ;
-  color: var(--secondary) ;
+.filter-accordion .accordion-button {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary);
   box-shadow: none;
 }
 
-.filter-accordion .accordion-button.collapsed{
-  color: var(--black) ;
+.filter-accordion .accordion-button.collapsed {
+  color: var(--black);
 }
 
 /* modal */
 .modal-backdrop {
   width: 100%;
   height: 100%;
+}
+
+#sliderNav .slick-track {
+  width: 100% !important;
+  margin: 0 !important;
 }

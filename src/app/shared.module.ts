@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SwiperModule } from 'swiper/angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -17,13 +18,15 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
     FormsModule,
     SwiperModule,
     NgbModule,
-    NgxSliderModule
+    NgxSliderModule,
+    SlickCarouselModule
   ],
   exports: [
     FormsModule,
     SwiperModule,
     NgbModule,
-    NgxSliderModule
+    NgxSliderModule,
+    SlickCarouselModule
   ],
   providers: []
 })

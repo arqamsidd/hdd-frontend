@@ -1,0 +1,287 @@
+<div class="product-container home-container">
+  <div class="product-details">
+    <div class="product-core">
+      <div class="breadcrumbs">
+        <a href="#">Storage</a>
+        /
+        <a href="#"> Hard Drives</a>
+        / <span class="current-link">Server Hard Drives</span>
+      </div>
+      <div class="product-card">
+        <h2 class="p-title">
+          759202-003 HP 600GB 15000RPM SAS 12Gb /s 2.5-inch Small Hard Drive
+          with Tray
+        </h2>
+        <div class="p-details">
+          <div class="p-gallery">
+            <ngx-slick-carousel
+              data-aos="slide-right"
+              class="my-gallery slider-main"
+              id="slider"
+              #slickModal="slick-carousel"
+              [config]="slideConfig"
+              style="margin: 0 !important"
+            >
+              <figure
+                *ngFor="let item of images; let i = index"
+                ngxSlickItem
+                itemprop="associatedMedia"
+                itemscope
+                itemtype=""
+              >
+                <a
+                  (click)="openLightBox(i)"
+                  itemprop="contentUrl"
+                  data-size="1200x1800"
+                >
+                  <img
+                    class="slickImage"
+                    src="{{ item.src }}"
+                    itemprop="thumbnail"
+                    alt="Image description"
+                  />
+                </a>
+
+                <figcaption itemprop="caption description">
+                  Image caption 2
+                </figcaption>
+              </figure>
+            </ngx-slick-carousel>
+
+            <ngx-slick-carousel
+              id="sliderNav"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos="slide-right"
+              data-aos-once="true"
+              *ngIf="images.length > 0"
+              [config]="slideConfigNav"
+              class="my-gallery product-thumbs-left slider-nav"
+            >
+              <figure
+                *ngFor="let item of images; let i = index"
+                ngxSlickItem
+                itemprop="associatedMedia"
+                itemscope
+                itemtype="http://schema.org/ImageObject"
+              >
+                <img
+                  src="{{ item.src }}"
+                  itemprop="thumbnail"
+                  alt="Image description"
+                />
+              </figure>
+            </ngx-slick-carousel>
+          </div>
+          <div class="p-meta">
+            <div class="print-share">
+              <div class="print-page">
+                <img src="/assets/icons/printer.svg" alt="Printer Icon" />
+                <a href="#">Print this Page</a>
+              </div>
+              <div class="share-page">
+                <button>
+                  <img
+                    src="/assets/icons/share-icon.svg"
+                    alt="Share Icon"
+                  />SHARE
+                </button>
+              </div>
+            </div>
+
+            <p class="p-manufacturer p-meta-field">
+              Manufacturer:
+              <span><img src="/assets/images/hp-logo.png" alt="" /> HP</span>
+            </p>
+            <p class="p-manufacturer p-meta-field">
+              Mfr. Part#: <span>BX806733104</span>
+            </p>
+            <p class="p-manufacturer p-meta-field">
+              Availability: <span class="in-stock">In Stock</span>
+            </p>
+            <p class="p-manufacturer p-meta-field">
+              Estimated Ship: <span>24-48 hrs</span>
+            </p>
+
+            <img class="p-warranty" src="/assets/images/warranty.png" alt="" />
+
+            <div class="po-notice">
+              <div class="po-icon">
+                <img src="/assets/icons/doc-icon.svg" alt="" />
+              </div>
+              <div class="po-text">
+                We Accept POs from Fortune 1000 Companies, Government Agencies
+                (Federal, State, Local), Defense (Military, Air Force, Navy),
+                Universities, Schools and Colleges
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-area">
+      <div class="add-to-cart box-shadowed">
+        <div class="shipping-label">
+          Free Shipping
+          <button class="q-icon" placement="end" ngbTooltip="Special Sale">
+            <img src="/assets/icons/question-icon.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="atc-pricing">
+          <p class="stock-level">In stock</p>
+          <p class="delivery-info">Most customer receive within 1-2 days.</p>
+          <div class="pricing">
+            <img src="/assets/icons/us-icon.svg" alt="" />
+            <h2 class="atc-price">$400.<sup>99</sup></h2>
+            <p class="atc-disc-price">$400.<sup>99</sup></p>
+            <button class="q-icon" placement="end" ngbTooltip="Special Sale">
+              <img src="/assets/icons/question-icon.svg" alt="" />
+            </button>
+          </div>
+          <p class="saved-amount">You save <span>$34.00</span></p>
+          <p class="stock-level-text">
+            Only 9 items available at this Special Price
+          </p>
+          <div class="p-action-btns">
+            <a href="#"
+              ><img
+                src="/assets/icons/checkbox-icon.svg"
+                alt="Checkbox icon"
+              />Add to compare</a
+            >
+            <a href="#"
+              ><img
+                src="/assets/icons/bell-icon.svg"
+                alt="Price alert icon"
+              />Price alert</a
+            >
+            <a href="#"
+              ><img
+                src="/assets/icons/truck-icon.svg"
+                alt="truck icon"
+              />Calculate Shipping</a
+            >
+          </div>
+        </div>
+
+        <div class="atc-buttons">
+          <div class="cart-qty">
+            <input type="number" value="{{ cartQty }}" min="1" />
+            <div class="cart-qty-btns">
+              <button class="increment" (click)="incrementCart()">+</button>
+              <button class="decrement" (click)="decrementCart()">-</button>
+            </div>
+          </div>
+          <div class="atc-btn">
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <p class="text-center">Security ID</p>
+        <p class="text-center">500112</p>
+        [Bar Code]
+        <p class="text-center">
+          S/C: 655001121 &nbsp;&nbsp;&nbsp; PN:MO000800JWUFU
+        </p>
+        <p>
+          This product will have aGenuine HP security sticker. We do not sell
+          3rd party HP products.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="product-meta">
+    <div class="product-detail-tabs">
+      <ul ngbNav #nav="ngbNav" class="nav-tabs specs-nav">
+        <li ngbNavItem>
+          <a ngbNavLink>Basic Overview</a>
+          <ng-template ngbNavContent>First content</ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Specification</a>
+          <ng-template ngbNavContent>Second content</ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav"></div>
+    </div>
+    <div class="product-extra">
+      <div class="request-quote">
+        <div class="quote-label">Request a Quote</div>
+        <div class="quote-form">
+          <div class="contact-info">
+            <div class="contact-icon">
+              <img src="/assets/icons/headphone-icon.svg" alt="" />
+            </div>
+            <div class="contact-text">
+              Are you looking for different items? Contact us at (866) 705-5346
+              or
+              <a href="mailto:sales@harddiskdirect.com"
+                >sales@harddiskdirect.com</a
+              >
+            </div>
+          </div>
+
+          <p class="quantity-input">
+            Create quotation for quantity <span><input type="text" /></span> x
+            759202-003 @ $400.99
+          </p>
+          <input
+            type="text"
+            id="business-email"
+            class="custom-input"
+            placeholder="Business Email"
+          />
+          <input
+            type="text"
+            id="phone-number"
+            class="custom-input"
+            placeholder="Phone Number"
+          />
+          <button class="send-quote-btn">Send Quote</button>
+        </div>
+      </div>
+
+      <div class="request-quote services-industry">
+        <div class="quote-label">Services by Industry</div>
+        <div class="services-container">
+          <div class="svc-img"></div>
+          <div class="svc-txt">
+            <div class="p-action-btns">
+              <div>
+                <p class="svc-heading">Enterprises</p>
+                <div class="svc-list">
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                </div>
+              </div>
+              <div>
+                <p class="svc-heading">Enterprises</p>
+                <div class="svc-list">
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                </div>
+              </div>
+              <div>
+                <p class="svc-heading">Enterprises</p>
+                <div class="svc-list">
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                  <div><a href="#">Test</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-product-related></app-product-related>
+<app-product-industries></app-product-industries>
+<app-reviews-slider></app-reviews-slider>
+<app-brands-slider></app-brands-slider>
