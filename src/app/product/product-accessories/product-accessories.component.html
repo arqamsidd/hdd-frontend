@@ -1,0 +1,26 @@
+<div class="product-single-card">
+  <div class="p-img">
+    <img src="/assets/images/harddisk.png" alt="" />
+  </div>
+  <h2 class="p-title">
+    WD8000A4NC - Western Digital Sharespace 8TB External Network Drive
+    (Refurbished)
+  </h2>
+  <div class="p-details">
+    <div class="p-pricing">
+      <p class="p-price">$229.99</p>
+      <p class="disc-price">$309.99</p>
+      <p class="disc-price item-no">Item #: 41303843</p>
+    </div>
+  </div>
+  <div class="p-qty">
+    <label for="p-qty">Qty: </label>
+    <button class="decrement" (click)="decrementCart()">-</button>
+    <input type="number" value="{{ cartQty }}" min="1" />
+    <button class="increment" (click)="incrementCart()">+</button>
+  </div>
+  <div class="p-atc">
+    <button >Add to Cart</button>
+  </div>
+</div>
+

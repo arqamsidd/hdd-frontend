@@ -10,14 +10,9 @@
     <div class="p-pricing">
       <p class="p-price">$229.99</p>
       <p class="disc-price">$309.99</p>
+
+      <p class="disc-price item-no">Item #: 41303843</p>
     </div>
-    <div class="p-qv">
-      <button (click)="quickView(prodContent)">Quick View</button>
-    </div>
-  </div>
-  <div class="p-labels">
-    <p class="p-label">Free Shipping</p>
-    <p class="p-label">+ Add to Quicklist</p>
   </div>
 
   <div class="p-qty">
@@ -27,19 +22,22 @@
     <button class="increment" (click)="incrementCart()">+</button>
   </div>
   <div class="p-atc">
-    <button >Add to Cart</button>
+    <button>Add to Cart</button>
   </div>
+  <div class="p-labels">
+    <p class="p-label">+ Add to Quicklist</p>
+  </div>
+  <div class="p-qv">
+    <button (click)="quickView(prodContent)">Quick View</button>
+  </div>
+
 </div>
 
 <ng-template #prodContent let-modal>
   <div class="modal-header">
-    <h4 class="modal-title " id="product-title" style="margin-right: 20px;">WD8000A4NC - Western Digital Sharespace 8TB External Network Drive (Refurbished)</h4>
-    <button
-      type="button"
-      class="btn-close"
-      aria-label="Close"
-      (click)="modal.dismiss('Cross click')"
-    ></button>
+    <h4 class="modal-title " id="product-title" style="margin-right: 20px;">WD8000A4NC - Western Digital Sharespace 8TB
+      External Network Drive (Refurbished)</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body p-modal">
     <div class="p-area">
@@ -55,7 +53,7 @@
           <a class="cta-btn">Details</a>
         </div>
       </div>
-      
+
     </div>
     <p class="p-desc">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos
@@ -68,6 +66,6 @@
     </p>
   </div>
   <div class="modal-footer">
-   
+
   </div>
 </ng-template>

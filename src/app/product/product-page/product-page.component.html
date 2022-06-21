@@ -14,62 +14,26 @@
         </h2>
         <div class="p-details">
           <div class="p-gallery">
-            <ngx-slick-carousel
-              data-aos="slide-right"
-              class="my-gallery slider-main"
-              id="slider"
-              #slickModal="slick-carousel"
-              [config]="slideConfig"
-              style="margin: 0 !important"
-            >
-              <figure
-                *ngFor="let item of images; let i = index"
-                ngxSlickItem
-                itemprop="associatedMedia"
-                itemscope
-                itemtype=""
-              >
-                <a
-                  (click)="openLightBox(i)"
-                  itemprop="contentUrl"
-                  data-size="1200x1800"
-                >
-                  <img
-                    class="slickImage"
-                    src="{{ item.src }}"
-                    itemprop="thumbnail"
-                    alt="Image description"
-                  />
+
+            <ngx-slick-carousel data-aos="slide-right" class="my-gallery slider-main" id="slider"
+              #slickModal="slick-carousel" [config]="slideConfig" style="margin: 0 !important">
+              <figure *ngFor="let item of images; let i = index" ngxSlickItem itemprop="associatedMedia" itemscope
+                itemtype="">
+                <a (click)="openLightBox(i)" itemprop="contentUrl" data-size="1200x1800">
+                  <img class="slickImage" src="{{ item.src }}" itemprop="thumbnail" alt="Image description" />
                 </a>
 
                 <figcaption itemprop="caption description">
-                  Image caption 2
+                  
                 </figcaption>
               </figure>
             </ngx-slick-carousel>
 
-            <ngx-slick-carousel
-              id="sliderNav"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos="slide-right"
-              data-aos-once="true"
-              *ngIf="images.length > 0"
-              [config]="slideConfigNav"
-              class="my-gallery product-thumbs-left slider-nav"
-            >
-              <figure
-                *ngFor="let item of images; let i = index"
-                ngxSlickItem
-                itemprop="associatedMedia"
-                itemscope
-                itemtype="http://schema.org/ImageObject"
-              >
-                <img
-                  src="{{ item.src }}"
-                  itemprop="thumbnail"
-                  alt="Image description"
-                />
+            <ngx-slick-carousel id="sliderNav"  *ngIf="images.length > 0" [config]="slideConfigNav"
+              class="my-gallery product-thumbs-left slider-nav">
+              <figure *ngFor="let item of images; let i = index" ngxSlickItem itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img src="{{ item.src }}" itemprop="thumbnail" alt="Image description" />
               </figure>
             </ngx-slick-carousel>
           </div>
@@ -81,10 +45,7 @@
               </div>
               <div class="share-page">
                 <button>
-                  <img
-                    src="/assets/icons/share-icon.svg"
-                    alt="Share Icon"
-                  />SHARE
+                  <img src="/assets/icons/share-icon.svg" alt="Share Icon" />SHARE
                 </button>
               </div>
             </div>
@@ -101,6 +62,22 @@
             </p>
             <p class="p-manufacturer p-meta-field">
               Estimated Ship: <span>24-48 hrs</span>
+            </p>
+            <p class="p-manufacturer p-meta-field">
+              Select Condition: <span><select class="form-control" name="condition" id="condition">
+                  <option value="1">Refurbished</option>
+                  <option value="1">New</option>
+                  <option value="1">Hello</option>
+                </select></span>
+            </p>
+            <p class="p-manufacturer p-meta-field">
+              Reviews: <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+              (45)
             </p>
 
             <img class="p-warranty" src="/assets/images/warranty.png" alt="" />
@@ -144,24 +121,9 @@
             Only 9 items available at this Special Price
           </p>
           <div class="p-action-btns">
-            <a href="#"
-              ><img
-                src="/assets/icons/checkbox-icon.svg"
-                alt="Checkbox icon"
-              />Add to compare</a
-            >
-            <a href="#"
-              ><img
-                src="/assets/icons/bell-icon.svg"
-                alt="Price alert icon"
-              />Price alert</a
-            >
-            <a href="#"
-              ><img
-                src="/assets/icons/truck-icon.svg"
-                alt="truck icon"
-              />Calculate Shipping</a
-            >
+            <a href="#"><img src="/assets/icons/checkbox-icon.svg" alt="Checkbox icon" />Add to compare</a>
+            <a href="#"><img src="/assets/icons/bell-icon.svg" alt="Price alert icon" />Price alert</a>
+            <a href="#"><img src="/assets/icons/truck-icon.svg" alt="truck icon" />Calculate Shipping</a>
           </div>
         </div>
 
@@ -204,6 +166,22 @@
           <a ngbNavLink>Specification</a>
           <ng-template ngbNavContent>Second content</ng-template>
         </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Accessories</a>
+          <ng-template ngbNavContent >
+            <div class="product-accessories-container">
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+              <app-product-accessories></app-product-accessories>
+            </div>
+          </ng-template>
+        </li>
       </ul>
       <div [ngbNavOutlet]="nav"></div>
     </div>
@@ -218,9 +196,7 @@
             <div class="contact-text">
               Are you looking for different items? Contact us at (866) 705-5346
               or
-              <a href="mailto:sales@harddiskdirect.com"
-                >sales@harddiskdirect.com</a
-              >
+              <a href="mailto:sales@harddiskdirect.com">sales@harddiskdirect.com</a>
             </div>
           </div>
 
@@ -228,18 +204,8 @@
             Create quotation for quantity <span><input type="text" /></span> x
             759202-003 @ $400.99
           </p>
-          <input
-            type="text"
-            id="business-email"
-            class="custom-input"
-            placeholder="Business Email"
-          />
-          <input
-            type="text"
-            id="phone-number"
-            class="custom-input"
-            placeholder="Phone Number"
-          />
+          <input type="text" id="business-email" class="custom-input" placeholder="Business Email" />
+          <input type="text" id="phone-number" class="custom-input" placeholder="Phone Number" />
           <button class="send-quote-btn">Send Quote</button>
         </div>
       </div>

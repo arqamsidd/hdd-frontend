@@ -27,17 +27,21 @@
 .product-single-card .disc-price.item-no{
   text-decoration: none;
 }
-
+.product-single-card .p-label:nth-child(1) {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ff7133;
+}
 .product-single-card .p-label {
   color: var(--primary);
   font-weight: normal;
   font-size: 14px;
-  margin: 0;
 }
 
 .product-single-card .p-img {
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 .product-single-card .p-img img {
@@ -54,30 +58,22 @@
   display: flex;
 }
 .product-single-card .p-labels {
-  text-align: center;
-  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-single-card .p-details .p-pricing {
   flex: 0 0 100%;
   text-align: center;
-  
 }
 
-.product-single-card .p-qv {
-  display: flex;
-  justify-content: center;
-}
-
-
-.product-single-card .p-qv button {
-  width: 50%;
-  border: 1px solid #5B5B5B;
+.product-single-card .p-details .p-qv button {
+  width: 100%;
+  border: 0;
   padding: 7px 0px;
-  background-color: #E8E8E8;
-  color: #5B5B5B;
+  background-color: #565656;
+  color: white;
   transition: 0.3s ease all;
-  border-radius: 4px;
 }
 
 .product-single-card .p-details .p-qv button:hover {
@@ -89,14 +85,14 @@
   border: 0;
   padding: 7px 0px;
   background: var(--yellow);
-
-  color: black;
-  font-weight: 500;
+  color: var(--black);
   transition: 0.3s ease all;
+  font-weight: 500;
+  border-radius: 4px;
 }
 .product-single-card .p-atc button:hover{
+  background: var(--primary);
   color: white;
-  background-color: var(--primary);
 }
 
 .p-qty {
@@ -131,28 +127,30 @@
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
-
-
-.p-modal .p-area{
+.p-modal .p-area {
   display: flex;
   gap: 1rem;
 }
-.p-modal .p-area .p-img{
+.p-modal .p-area .p-img {
   flex-basis: 40%;
 }
 
-.p-modal .p-desc{
+.p-modal .p-desc {
   margin-top: 20px;
 }
 
 @media (max-width: 480px) {
+  .product-single-card {
+    padding: 0rem;
+  }
+  
   .product-single-card-first .p-img {
     text-align: left;
   }

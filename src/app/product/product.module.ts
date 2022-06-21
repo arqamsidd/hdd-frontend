@@ -7,12 +7,14 @@ import { ComponentsModule } from '../components/components.module';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductIndustriesComponent } from './product-industries/product-industries.component';
 import { ProductRelatedComponent } from './product-related/product-related.component';
+import { ProductAccessoriesComponent } from './product-accessories/product-accessories.component';
 
 @NgModule({
   declarations: [
     ProductPageComponent,
     ProductIndustriesComponent,
-    ProductRelatedComponent
+    ProductRelatedComponent,
+    ProductAccessoriesComponent
   ],
   imports: [
     CommonModule,

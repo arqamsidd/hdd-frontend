@@ -12,9 +12,9 @@ export class ProductPageComponent implements OnInit {
   cartQty = 1;
 
   slideConfig = {
-    dots: false,
+    dots: true,
     infinite: false,
-    arrows: true,
+    arrows: false,
     // nextArrow: '<div class=\'nav-btn next-slide\'></div>',
     // prevArrow: '<div class=\'nav-btn prev-slide\'></div>',
     speed: 300,
@@ -29,28 +29,25 @@ export class ProductPageComponent implements OnInit {
     dots: false,
     infinite: false,
     arrows: true,
-    // nextArrow: '<div class=\'nav-slider-button\'></div>',
-    // prevArrow: '<div class=\'nav-slider-button\'></div>',
     speed: 300,
     slidesToShow: 4,
+    rows: 1,
+    slidesPerRow: 4,
     asNavFor: '#slider',
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     swipe: true,
-    //  centerMode: true,
     focusOnSelect: true,
   };
 
+
   images = [
     {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"},
-    {src: "/assets/prod/1.png"}
+    {src: "/assets/prod/2.jpg"},
+    {src: "/assets/prod/3.jpg"},
+    {src: "/assets/prod/4.jpg"},
+    {src: "/assets/prod/5.jpg"},
+    {src: "/assets/prod/6.png"}
 
   ]
 
