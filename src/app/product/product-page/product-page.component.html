@@ -161,6 +161,15 @@
   <div class="product-meta">
     <div class="product-detail-tabs">
       <ul ngbNav #nav="ngbNav" class="nav-tabs specs-nav">
+
+        <li ngbNavItem>
+          <a ngbNavLink>Basic Overview</a>
+          <ng-template ngbNavContent>First content</ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Specification</a>
+          <ng-template ngbNavContent>Second content</ng-template>
+        </li>
         <li ngbNavItem>
           <a ngbNavLink>Accessories</a>
           <ng-template ngbNavContent>
@@ -177,15 +186,7 @@
             </div>
           </ng-template>
         </li>
-        <li ngbNavItem>
-          <a ngbNavLink>Basic Overview</a>
-          <ng-template ngbNavContent>First content</ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink>Specification</a>
-          <ng-template ngbNavContent>Second content</ng-template>
-        </li>
-        
+
       </ul>
       <div [ngbNavOutlet]="nav"></div>
     </div>
