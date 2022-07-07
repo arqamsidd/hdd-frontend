@@ -17,6 +17,7 @@ import { ImageWithTextComponent } from './image-with-text/image-with-text.compon
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { BrandsSliderComponent } from './brands-slider/brands-slider.component';
 import { FullImageCtaComponent } from './full-image-cta/full-image-cta.component';
+import { ProductAccessoriesComponent } from './product-accessories/product-accessories.component';
 
 
 
@@ -43,7 +44,8 @@ import { SharedModule } from '../shared.module';
     BrandsSliderComponent,
     FullImageCtaComponent,
     ProductCardSliderComponent,
-    FirstProductCardSliderComponent
+    FirstProductCardSliderComponent,
+    ProductAccessoriesComponent
     
   ],
   imports: [
@@ -66,7 +68,8 @@ import { SharedModule } from '../shared.module';
     BrandsSliderComponent,
     FullImageCtaComponent,
     ProductCardSliderComponent,
-    FirstProductCardSliderComponent
+    FirstProductCardSliderComponent,
+    ProductAccessoriesComponent
 
   ]
 })

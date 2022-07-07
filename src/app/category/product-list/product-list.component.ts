@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  grid = true;
   page = 1;
   pageSize = 8;
   prods = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
@@ -13,5 +14,14 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  toggleGrid(){
+    this.grid = true;
+  }
+
+  toggleList(){
+    this.grid = false;
+  }
+
 
 }

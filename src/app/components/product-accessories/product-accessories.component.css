@@ -61,7 +61,7 @@
 
 .product-single-card .p-img {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 20px;
   align-items: center;
 

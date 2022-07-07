@@ -16,12 +16,29 @@
         </select>
       </div>
     </div>
+    <div class="product-view">
+      <button class="cta-btn"   (click)="toggleGrid()">List</button>
+      <button class="cta-btn ms-2" (click)="toggleList()">Grid</button>
+    </div>
   </div>
 
-  <div class="product-cards">
+  <div class="product-cards " *ngIf="grid==true">
     <app-single-shop-product-card
       *ngFor="let item of prods | slice: (page - 1) * pageSize:page * pageSize"
     ></app-single-shop-product-card>
+
+    <ngb-pagination
+      [collectionSize]="12"
+      [(page)]="page"
+      [pageSize]="pageSize"
+      aria-label="Default pagination"
+    ></ngb-pagination>
+  </div>
+
+  <div class="product-list" *ngIf="grid==false">
+    <app-product-accessories
+      *ngFor="let item of prods | slice: (page - 1) * pageSize:page * pageSize"
+    ></app-product-accessories>
 
     <ngb-pagination
       [collectionSize]="12"
