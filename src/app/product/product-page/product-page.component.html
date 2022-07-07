@@ -14,28 +14,36 @@
         </h2>
         <div class="p-details">
           <div class="p-gallery">
+            <ng-container *ngIf="!productLoading">
 
-            <ngx-slick-carousel data-aos="slide-right" class="my-gallery slider-main" id="slider"
-              #slickModal="slick-carousel" [config]="slideConfig" style="margin: 0 !important">
-              <figure *ngFor="let item of images; let i = index" ngxSlickItem itemprop="associatedMedia" itemscope
-                itemtype="">
-                <a (click)="openLightBox(i)" itemprop="contentUrl" data-size="1200x1800">
-                  <img class="slickImage" src="{{ item.src }}" itemprop="thumbnail" alt="Image description" />
-                </a>
+              <div class="no-img" *ngIf="product?.images.length === 0">
+                <img alt="{{product?.title}}" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                  data-aos="slide-right" data-aos-once="true" id="img_1" src="assets/images/no-image.png" alt="" />
+              </div>
+              <ngx-slick-carousel data-aos="slide-right" *ngIf="product?.images.length > 0"
+                class="my-gallery slider-main" id="slider" #slickModal="slick-carousel" [config]="slideConfig"
+                style="margin:0 !important;">
 
-                <figcaption itemprop="caption description">
 
-                </figcaption>
-              </figure>
-            </ngx-slick-carousel>
+                <figure *ngFor="let item of product?.images; let i = index;" ngxSlickItem itemprop="associatedMedia"
+                  itemscope itemtype="">
+                  <a (click)="openLightBox(i)" itemprop="contentUrl" data-size="1200x1800">
+                    <img alt="{{product?.title}}" class="slickImage" [lazyLoad]="item.image" itemprop="thumbnail"
+                      alt="Image description" />
+                  </a>
+                  <figcaption itemprop="caption description"></figcaption>
+                </figure>
 
-            <ngx-slick-carousel id="sliderNav" *ngIf="images.length > 0" [config]="slideConfigNav"
-              class="my-gallery product-thumbs-left slider-nav">
-              <figure *ngFor="let item of images; let i = index" ngxSlickItem itemprop="associatedMedia" itemscope
-                itemtype="http://schema.org/ImageObject">
-                <img src="{{ item.src }}" itemprop="thumbnail" alt="Image description" />
-              </figure>
-            </ngx-slick-carousel>
+              </ngx-slick-carousel>
+              <ngx-slick-carousel id="sliderNav" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                data-aos="slide-right" data-aos-once="true" *ngIf="product?.images.length > 0" [config]="slideConfigNav"
+                class="my-gallery product-thumbs-left slider-nav">
+                <figure *ngFor="let item of product?.images; let i=index" ngxSlickItem itemprop="associatedMedia"
+                  itemscope itemtype="http://schema.org/ImageObject">
+                  <img alt="{{product?.title}}" [lazyLoad]="item.image" itemprop="thumbnail" alt="Image description" />
+                </figure>
+              </ngx-slick-carousel>
+            </ng-container>
           </div>
           <div class="p-meta">
             <div class="print-share">
