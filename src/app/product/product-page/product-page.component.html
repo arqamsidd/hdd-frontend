@@ -24,12 +24,12 @@
                 </a>
 
                 <figcaption itemprop="caption description">
-                  
+
                 </figcaption>
               </figure>
             </ngx-slick-carousel>
 
-            <ngx-slick-carousel id="sliderNav"  *ngIf="images.length > 0" [config]="slideConfigNav"
+            <ngx-slick-carousel id="sliderNav" *ngIf="images.length > 0" [config]="slideConfigNav"
               class="my-gallery product-thumbs-left slider-nav">
               <figure *ngFor="let item of images; let i = index" ngxSlickItem itemprop="associatedMedia" itemscope
                 itemtype="http://schema.org/ImageObject">
@@ -64,13 +64,6 @@
               Estimated Ship: <span>24-48 hrs</span>
             </p>
             <p class="p-manufacturer p-meta-field">
-              Select Condition: <span><select class="form-control" name="condition" id="condition">
-                  <option value="1">Refurbished</option>
-                  <option value="1">New</option>
-                  <option value="1">Hello</option>
-                </select></span>
-            </p>
-            <p class="p-manufacturer p-meta-field">
               Reviews: <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -97,7 +90,7 @@
       </div>
     </div>
     <div class="cart-area">
-      <div class="add-to-cart box-shadowed">
+      <div class="add-to-cart ">
         <div class="shipping-label">
           Free Shipping
           <button class="q-icon" placement="end" ngbTooltip="Special Sale">
@@ -107,14 +100,24 @@
 
         <div class="atc-pricing">
           <p class="stock-level">In stock</p>
-          <p class="delivery-info">Most customer receive within 1-2 days.</p>
           <div class="pricing">
-            <img src="/assets/icons/us-icon.svg" alt="" />
             <h2 class="atc-price">$400.<sup>99</sup></h2>
             <p class="atc-disc-price">$400.<sup>99</sup></p>
             <button class="q-icon" placement="end" ngbTooltip="Special Sale">
               <img src="/assets/icons/question-icon.svg" alt="" />
             </button>
+          </div>
+          <div class="p-condition">
+            <b>Product Condition:</b>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="p-condition" id="refurb" value="refurbished">
+              <label class="form-check-label" for="refurb">Refurbished</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="p-condition" id="new" value="new">
+              <label class="form-check-label" for="new">New</label>
+            </div>
           </div>
           <p class="saved-amount">You save <span>$34.00</span></p>
           <p class="stock-level-text">
@@ -149,7 +152,7 @@
           S/C: 655001121 &nbsp;&nbsp;&nbsp; PN:MO000800JWUFU
         </p>
         <p>
-          This product will have aGenuine HP security sticker. We do not sell
+          This product will have a genuine HP security sticker. We do not sell
           3rd party HP products.
         </p>
       </div>
@@ -159,16 +162,8 @@
     <div class="product-detail-tabs">
       <ul ngbNav #nav="ngbNav" class="nav-tabs specs-nav">
         <li ngbNavItem>
-          <a ngbNavLink>Basic Overview</a>
-          <ng-template ngbNavContent>First content</ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink>Specification</a>
-          <ng-template ngbNavContent>Second content</ng-template>
-        </li>
-        <li ngbNavItem>
           <a ngbNavLink>Accessories</a>
-          <ng-template ngbNavContent >
+          <ng-template ngbNavContent>
             <div class="product-accessories-container">
               <app-product-accessories></app-product-accessories>
               <app-product-accessories></app-product-accessories>
@@ -182,6 +177,15 @@
             </div>
           </ng-template>
         </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Basic Overview</a>
+          <ng-template ngbNavContent>First content</ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Specification</a>
+          <ng-template ngbNavContent>Second content</ng-template>
+        </li>
+        
       </ul>
       <div [ngbNavOutlet]="nav"></div>
     </div>

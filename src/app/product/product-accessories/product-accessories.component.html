@@ -2,25 +2,39 @@
   <div class="p-img">
     <img src="/assets/images/harddisk.png" alt="" />
   </div>
-  <h2 class="p-title">
-    WD8000A4NC - Western Digital Sharespace 8TB External Network Drive
-    (Refurbished)
-  </h2>
   <div class="p-details">
-    <div class="p-pricing">
-      <p class="p-price">$229.99</p>
-      <p class="disc-price">$309.99</p>
-      <p class="disc-price item-no">Item #: 41303843</p>
-    </div>
+    <h2 class="p-title">
+      WD8000A4NC - Western Digital Sharespace 8TB External Network Drive
+      (Refurbished)
+    </h2>
+    <p class="p-manufacturer p-meta-field">
+      Manufacturer:
+      <span><img src="/assets/images/hp-logo.png" alt="" /> HP</span>
+    </p>
+    <p class="p-manufacturer p-meta-field">
+      Mfr. Part#: <span>BX806733104</span>
+    </p>
+    <p class="p-manufacturer p-meta-field">
+      Estimated Ship: <span>24-48 hrs</span>
+    </p>
   </div>
-  <div class="p-qty">
-    <label for="p-qty">Qty: </label>
-    <button class="decrement" (click)="decrementCart()">-</button>
-    <input type="number" value="{{ cartQty }}" min="1" />
-    <button class="increment" (click)="incrementCart()">+</button>
-  </div>
-  <div class="p-atc">
-    <button >Add to Cart</button>
-  </div>
-</div>
 
+  <div class="p-pricing">
+    <div class="p-pric">
+      <p class="stock-text">In Stock</p>
+      <p class="p-price">$229.99</p>
+    </div>
+    <div class="p-qty">
+      <label for="p-qty">Qty: </label>
+      <button class="decrement" (click)="decrementCart()">-</button>
+      <input type="number" value="{{ cartQty }}" min="1" />
+      <button class="increment" (click)="incrementCart()">+</button>
+    </div>
+    <div class="p-atc">
+      <button>Add to Cart</button>
+    </div>
+    <p class="p-label compare-list">+ Add to Comparelist</p>
+  </div>
+
+
+</div>

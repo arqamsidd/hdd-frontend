@@ -82,7 +82,7 @@
   border: 0;
   font-weight: bold;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .print-share .share-page img,
 .print-share .share-page button {
@@ -126,7 +126,7 @@
   gap: 2rem;
   background-color: #f5f5f5;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
   padding-left: 25px;
 }
 .p-meta .po-notice .po-icon {
@@ -138,9 +138,10 @@
 
 .cart-area .add-to-cart {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0px;
   padding-bottom: 5px;
   position: relative;
+  border: 1px solid #d8d8d8;
 }
 
 .cart-area .add-to-cart .shipping-label {
@@ -150,8 +151,8 @@
   padding: 5px 0px;
   font-size: 16px;
   font-style: italic;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   padding-right: 20px;
   width: 180px;
   margin-left: auto;
@@ -186,7 +187,7 @@
   margin: 15px;
   background-color: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .cart-area .add-to-cart .atc-pricing p {
@@ -258,7 +259,7 @@
   margin: 15px;
   background-color: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
   display: flex;
   gap: 1rem;
 }
@@ -275,7 +276,7 @@
 }
 .cart-area .add-to-cart .atc-buttons .atc-btn button {
   background-color: #f4ab0c;
-  border-radius: 10px;
+  border-radius: 0px;
   color: black;
   font-weight: bold;
   border: 0;
@@ -309,7 +310,7 @@
   width: 80px;
   text-align: center;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -321,10 +322,10 @@
 }
 .cart-qty button.increment {
   border-bottom: 0;
-  border-top-right-radius: 5px;
+  border-top-right-radius: 0px;
 }
 .cart-qty button.decrement {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 0px;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -337,7 +338,7 @@ input[type="number"] {
 
 .cart-area .disclaimer {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 10px;
   margin-top: 20px;
   border: 1px solid #d8d8d8;
@@ -350,10 +351,17 @@ input[type="number"] {
   font-size: 12px;
   margin-top: 5px;
 }
+.disclaimer .barcode {
+  text-align: center;
+}
+.disclaimer .barcode svg{
+  height: auto;
+  width: 200px;
+}
 
 .product-extra .request-quote {
   border: 1px solid #707070;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .product-extra .request-quote .quote-label {
@@ -362,14 +370,14 @@ input[type="number"] {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: bold;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .product-extra .request-quote .quote-form {
   margin: 15px;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .product-meta .contact-info {
@@ -399,14 +407,14 @@ input[type="number"] {
   background-color: #f5f5f5;
   padding: 5px;
   padding-left: 20px;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 10px;
 }
 
 .request-quote .send-quote-btn {
   background-color: #3bb400;
   border: 0;
-  border-radius: 10px;
+  border-radius: 0px;
   color: white;
   transition: 0.3s ease-in-out all;
   padding: 20px 40px;
@@ -421,11 +429,17 @@ input[type="number"] {
 }
 
 .product-meta .specs-nav {
-  justify-content: space-between;
-  border: 1px solid black;
+  margin-left: 30px;
 }
 .product-meta .specs-nav > li {
-  width: 33.33%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  width: 150px;
+}
+.product-meta .specs-nav > li:nth-last-child(1){
+  border-right: 1px solid black;
+
 }
 .product-meta .specs-nav > li > a {
   color: var(--black);
@@ -434,21 +448,20 @@ input[type="number"] {
   border: 0;
 }
 .product-meta .specs-nav > li > a {
-  border-right: 1px solid black !important;
 }
 .product-meta .specs-nav > li:nth-child(3) > a {
   border-right: none !important
 }
 .product-meta .specs-nav > li > a.active {
-  background-color: #f5f5f5;
+  background-color: var(--primary);
   border: 0;
-  border-bottom: 1px solid black;
+  color: white;
 }
 
 .product-detail-tabs .tab-content {
   padding: 2rem;
   border: 1px solid black;
-  border-top: 0;
+  margin-top: 5px;
 }
 .product-extra .services-industry {
   margin-top: 20px;
@@ -521,10 +534,17 @@ select.form-control{
   gap: 1rem;
 }
 .product-accessories-container > *{
-  flex-basis: 32.1%;
+  flex-basis: 100%;
 }
 
 @media (max-width: 480px) {
+
+  .product-meta .specs-nav {
+    margin-left: 0px;
+  }
+  .product-meta .specs-nav > li {
+    width: unset;
+  }
   .product-details {
     display: flex;
     flex-direction: column;
@@ -582,7 +602,5 @@ select.form-control{
     margin-top: 48px;
   }
 
-  .product-accessories-container > *{
-    flex-basis: 47%;
-  }
+  
 }
